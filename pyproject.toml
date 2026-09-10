@@ -1,0 +1,25 @@
+[project]
+name = "abkit"
+version = "0.1.0"
+description = "Design and analysis toolkit for A/B/n experiments"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "scipy",
+    "statsmodels",
+    "pandas",
+    "matplotlib",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "mypy>=2.3.1",
+    "pytest>=9.1.1",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.16.7",
+]
